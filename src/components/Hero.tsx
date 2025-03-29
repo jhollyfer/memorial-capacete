@@ -16,7 +16,7 @@ const Hero = () => {
           Imagem de fundo: Território Ticuna no Alto Solimões
         </p> */}
         <img
-          src="https://racismoambiental.net.br/wp-content/uploads/2016/01/pes-indigenas-750x410.jpg"
+          src="/hero.png"
           alt="Território Ticuna no Alto Solimões"
           className="absolute inset-0 object-cover w-full h-full"
         />
