@@ -1,8 +1,7 @@
-
-import React, { useState, useEffect } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import { cn } from '@/lib/utils';
-import { Menu, X } from 'lucide-react';
+import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -12,9 +11,9 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
@@ -27,10 +26,12 @@ const Header = () => {
   ];
 
   return (
-    <header className={cn(
-      "fixed top-0 w-full z-50 transition-all duration-300 py-3 sm:py-4",
-      isScrolled ? "bg-memorial-light/95 shadow-md backdrop-blur-sm" : "bg-transparent"
-    )}>
+    <header
+      className={cn(
+        "fixed top-0 w-full z-50 transition-all duration-300 py-3 sm:py-4 bg-memorial-light/95 shadow-md backdrop-blur-sm"
+        // isScrolled ? "bg-memorial-light/95 shadow-md backdrop-blur-sm" : "bg-transparent"
+      )}
+    >
       <div className="memorial-container">
         <div className="flex items-center justify-between">
           <Link to="#hero" className="flex items-center text-memorial-brown">
@@ -56,7 +57,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile menu button */}
-          <button 
+          <button
             className="md:hidden text-memorial-brown p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
@@ -82,6 +83,6 @@ const Header = () => {
       </div>
     </header>
   );
-}
+};
 
 export default Header;
