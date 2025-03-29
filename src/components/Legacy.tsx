@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { ExternalLink } from 'lucide-react';
@@ -46,17 +47,35 @@ const impactItems = [
   {
     title: "Cultura e Arte",
     description: "O massacre inspirou produções artísticas e culturais, como poemas, músicas e pinturas que retratam a resistência e a memória Ticuna.",
-    image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
+    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027"
   },
   {
     title: "Legislação Indígena",
     description: "O caso contribuiu para o debate sobre a necessidade de legislação específica para a proteção dos direitos e territórios indígenas no Brasil.",
-    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
+    image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d"
   },
   {
     title: "Fortalecimento Identitário",
     description: "Após o massacre, o povo Ticuna intensificou processos de autoafirmação cultural e valorização de suas tradições como forma de resistência.",
+    image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a"
+  }
+];
+
+const ticunaHistory = [
+  {
+    title: "Origens Ancestrais",
+    description: "O povo Ticuna (também grafado como Tikuna, Tukuna ou Magüta) habita tradicionalmente a região amazônica da tríplice fronteira entre Brasil, Peru e Colômbia há milênios. Segundo sua cosmologia, são descendentes de Yo'i, herói mítico que os pescou com iscas de macaxeira no igarapé sagrado Eware.",
+    image: "https://images.unsplash.com/photo-1465379944081-7f47de8d74ac"
+  },
+  {
+    title: "Organização Social",
+    description: "A sociedade Ticuna é tradicionalmente organizada em clãs patrilineares divididos em duas metades: com penas (aves) e sem penas (animais terrestres e plantas). Essa organização regula os casamentos, que devem ocorrer entre pessoas de clãs opostos, evitando o que consideram incesto.",
     image: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2"
+  },
+  {
+    title: "Contato e Resistência",
+    description: "O contato com os colonizadores europeus data do século XVII. Os Ticuna sofreram com a escravidão durante o ciclo da borracha e foram forçados a trabalhar nos seringais. Ao longo dos séculos, desenvolveram estratégias de resistência cultural e territorial que permitiram sua sobrevivência como povo.",
+    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
   }
 ];
 
@@ -71,6 +90,45 @@ const Legacy = () => {
             transformando a tragédia em força para resistência e mudança
           </p>
           <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
+        </div>
+
+        <div className="mb-20">
+          <h3 className="text-2xl font-bold mb-8 text-white text-center">O Povo Ticuna: Origens e História</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            {ticunaHistory.map((item, index) => (
+              <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-colors overflow-hidden">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={item.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-bold mb-3 text-white">{item.title}</h4>
+                  <p className="text-white/80">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          <div className="mt-8 bg-white/10 p-6 rounded-lg">
+            <h4 className="text-xl font-bold mb-3 text-white">Dados Demográficos e Linguísticos</h4>
+            <p className="text-white/80 mb-4">
+              Os Ticuna constituem o povo indígena mais numeroso da Amazônia brasileira, com uma população estimada em mais de 36.000 pessoas no Brasil, 
+              principalmente no estado do Amazonas, além de cerca de 7.000 no Peru e 8.000 na Colômbia. A língua Ticuna é considerada isolada, 
+              sem parentesco comprovado com outras línguas indígenas, o que evidencia sua singularidade cultural e histórica na região amazônica.
+            </p>
+            <div className="flex justify-center mt-4">
+              <a 
+                href="https://pib.socioambiental.org/pt/Povo:Ticuna" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-white/70 hover:text-white transition-colors"
+              >
+                Saiba mais sobre os Ticuna <ExternalLink size={16} className="ml-1" />
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

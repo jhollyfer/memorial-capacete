@@ -17,14 +17,49 @@ const History = () => {
 
         <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
           <div>
-            <h3 className="text-xl md:text-2xl font-bold mb-4 text-memorial-brown">Contexto Histórico</h3>
+            <h3 className="text-xl md:text-2xl font-bold mb-4 text-memorial-brown">O Povo Ticuna</h3>
             <p className="mb-4 text-memorial-dark/90">
-              Os Ticuna, com uma população de aproximadamente 36.000 pessoas, constituem o povo indígena mais numeroso da Amazônia brasileira. 
-              Tradicionalmente, habitam a região do Alto Solimões, distribuídos em terras que abrangem o Brasil, Peru e Colômbia, ocupando a área 
-              muito antes do estabelecimento das fronteiras nacionais.
+              Os Ticuna, também conhecidos como "povo Magüta" (que significa "povo pescado com vara", segundo sua mitologia de origem), 
+              constituem o povo indígena mais numeroso da Amazônia brasileira, com uma população de aproximadamente 36.000 pessoas no Brasil.
             </p>
             <p className="mb-4 text-memorial-dark/90">
-              Desde a década de 1970, os conflitos entre indígenas e madeireiros, grileiros e posseiros 
+              Tradicionalmente, habitam a região do Alto Solimões, distribuídos em terras que abrangem o Brasil, Peru e Colômbia, 
+              ocupando a área muito antes do estabelecimento das fronteiras nacionais. A língua Ticuna é considerada isolada, 
+              sem parentesco comprovado com outras famílias linguísticas, evidenciando sua singularidade na região.
+            </p>
+            <div className="bg-memorial-beige p-4 rounded-md my-4">
+              <h4 className="font-bold text-memorial-brown">Cosmologia e Organização Social:</h4>
+              <ul className="list-disc pl-5 mt-2">
+                <li>Segundo sua mitologia, os Ticuna foram pescados por Yo'i, herói criador, no igarapé Eware.</li>
+                <li>A sociedade é dividida em clãs patrilineares agrupados em duas metades: "com penas" (aves) e "sem penas" (animais terrestres).</li>
+                <li>O ritual de iniciação feminina "A Festa da Moça Nova" (Worecü) é uma das mais importantes expressões culturais Ticuna.</li>
+                <li>A arte Ticuna se destaca pela confecção de máscaras rituais, cestarias e esculturas em madeira.</li>
+              </ul>
+            </div>
+          </div>
+          <Card className="overflow-hidden shadow-lg">
+            <CardContent className="p-0">
+              <img 
+                src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac" 
+                alt="Representação da floresta amazônica, território tradicional Ticuna" 
+                className="w-full h-auto object-cover aspect-video"
+              />
+              <div className="p-3 bg-memorial-beige/60">
+                <p className="text-sm text-memorial-dark/80">Território tradicional dos Ticuna na região do Alto Solimões, fronteira entre Brasil, Colômbia e Peru, caracterizado pela densa floresta amazônica.</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+          <div>
+            <h3 className="text-xl md:text-2xl font-bold mb-4 text-memorial-brown">Contexto Histórico</h3>
+            <p className="mb-4 text-memorial-dark/90">
+              Desde o século XVII, os Ticuna enfrentaram diferentes formas de violência e exploração: inicialmente missões jesuítas, 
+              depois o regime dos seringais durante o ciclo da borracha (1870-1920), quando muitos foram escravizados para extração de látex.
+            </p>
+            <p className="mb-4 text-memorial-dark/90">
+              A partir da década de 1970, os conflitos entre indígenas e madeireiros, grileiros e posseiros 
               se intensificaram devido à disputa por terras e exploração de recursos naturais. A pressão sobre os territórios Ticuna 
               cresceu com a expansão das atividades de extração de madeira e agricultura comercial.
             </p>
@@ -37,8 +72,8 @@ const History = () => {
           <Card className="overflow-hidden shadow-lg">
             <CardContent className="p-0">
               <img 
-                src="https://images.unsplash.com/photo-1551038247-3d9af20df552" 
-                alt="Região amazônica do Alto Solimões" 
+                src="https://images.unsplash.com/photo-1493962853295-0fd70327578a" 
+                alt="Representação da região amazônica do Alto Solimões" 
                 className="w-full h-auto object-cover aspect-video"
               />
               <div className="p-3 bg-memorial-beige/60">
@@ -75,8 +110,8 @@ const History = () => {
           <Card className="overflow-hidden shadow-lg md:order-1">
             <CardContent className="p-0">
               <img 
-                src="https://images.unsplash.com/photo-1527576539890-dfa815648363" 
-                alt="Representação simbólica das estruturas de poder na região amazônica" 
+                src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d" 
+                alt="Representação da região do massacre" 
                 className="w-full h-auto object-cover aspect-video"
               />
               <div className="p-3 bg-memorial-beige/60">
@@ -134,8 +169,8 @@ const History = () => {
           <Card className="overflow-hidden shadow-lg">
             <CardContent className="p-0">
               <img 
-                src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b" 
-                alt="Representação simbólica do sistema de justiça" 
+                src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2" 
+                alt="Representação da justiça e luta dos povos indígenas" 
                 className="w-full h-auto object-cover aspect-video"
               />
               <div className="p-3 bg-memorial-beige/60">
