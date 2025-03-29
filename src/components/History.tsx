@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+import { ExternalLink } from 'lucide-react';
 
 const History = () => {
   return (
@@ -18,23 +19,31 @@ const History = () => {
           <div>
             <h3 className="text-xl md:text-2xl font-bold mb-4 text-memorial-brown">Contexto Histórico</h3>
             <p className="mb-4 text-memorial-dark/90">
-              Os Ticuna, o povo indígena mais numeroso da Amazônia brasileira, habitam tradicionalmente a região do Alto Solimões, 
-              que abrange partes do Brasil, Peru e Colômbia. Desde a década de 1970, os conflitos entre indígenas e madeireiros, grileiros e posseiros 
-              se intensificaram devido à disputa por terras e exploração de recursos naturais.
+              Os Ticuna, com uma população de aproximadamente 36.000 pessoas, constituem o povo indígena mais numeroso da Amazônia brasileira. 
+              Tradicionalmente, habitam a região do Alto Solimões, distribuídos em terras que abrangem o Brasil, Peru e Colômbia, ocupando a área 
+              muito antes do estabelecimento das fronteiras nacionais.
             </p>
-            <p className="text-memorial-dark/90">
-              No início dos anos 1980, os Ticuna se mobilizaram na luta pela demarcação de suas terras tradicionais. 
-              Essa organização política, que incluía assembleias e a publicação do jornal Magüta, provocou hostilidade 
-              de grupos interessados na exploração econômica da região.
+            <p className="mb-4 text-memorial-dark/90">
+              Desde a década de 1970, os conflitos entre indígenas e madeireiros, grileiros e posseiros 
+              se intensificaram devido à disputa por terras e exploração de recursos naturais. A pressão sobre os territórios Ticuna 
+              cresceu com a expansão das atividades de extração de madeira e agricultura comercial.
             </p>
+            <blockquote className="border-l-4 border-memorial-accent pl-4 italic text-memorial-dark/80 my-6">
+              "A demarcação da terra indígena representava uma ameaça aos interesses econômicos de madeireiros, comerciantes e políticos locais, 
+              que exploravam os recursos da área há décadas sem reconhecer os direitos territoriais dos povos originários."
+              <footer className="text-sm mt-2 not-italic">— Relatório da Comissão Especial de Investigação, 1988</footer>
+            </blockquote>
           </div>
           <Card className="overflow-hidden shadow-lg">
             <CardContent className="p-0">
               <img 
-                src="https://source.unsplash.com/photo-1472396961693-142e6e269027" 
-                alt="Região amazônica" 
+                src="https://images.unsplash.com/photo-1551038247-3d9af20df552" 
+                alt="Região amazônica do Alto Solimões" 
                 className="w-full h-auto object-cover aspect-video"
               />
+              <div className="p-3 bg-memorial-beige/60">
+                <p className="text-sm text-memorial-dark/80">Região do Alto Solimões, onde vivem os Ticuna há séculos, marcada por conflitos territoriais e disputa por recursos naturais.</p>
+              </div>
             </CardContent>
           </Card>
         </div>
@@ -44,26 +53,35 @@ const History = () => {
             <h3 className="text-xl md:text-2xl font-bold mb-4 text-memorial-brown">O Dia do Massacre</h3>
             <p className="mb-4 text-memorial-dark/90">
               Em 28 de março de 1988, na localidade conhecida como Boca do Capacete, próxima ao município de 
-              Benjamin Constant (AM), um grupo de indígenas Ticuna estava reunido em assembleia, desarmados, 
-              para discutir questões relacionadas à demarcação de suas terras.
+              Benjamin Constant (AM), aproximadamente 90 indígenas Ticuna estavam reunidos em assembleia, desarmados, 
+              para discutir questões relacionadas à demarcação de suas terras e as crescentes ameaças que vinham recebendo.
             </p>
             <p className="mb-4 text-memorial-dark/90">
-              Durante a reunião, um grupo de 14 homens armados, liderados pelo madeireiro Oscar de Almeida Castelo Branco, 
-              invadiu o local e abriu fogo contra os indígenas. O ataque resultou em pelo menos 4 mortos confirmados, 
-              23 feridos e 10 desaparecidos, incluindo crianças.
+              Por volta das 09h00, um grupo de 14 homens armados, liderados pelo madeireiro Oscar de Almeida Castelo Branco, 
+              invadiu o local em duas lanchas. Com os rostos cobertos e usando roupas camufladas, abriram fogo contra os indígenas.
+              O ataque durou aproximadamente 30 minutos, resultando em pelo menos 4 mortos confirmados, incluindo uma criança de 
+              apenas 15 meses, 23 feridos e 10 desaparecidos.
             </p>
-            <p className="text-memorial-dark/90">
-              Para tentar ocultar evidências, corpos de algumas vítimas foram lançados no Rio Solimões, enquanto os 
-              sobreviventes feridos buscaram socorro em hospitais da região.
-            </p>
+            <div className="bg-memorial-beige p-4 rounded-md my-4">
+              <h4 className="font-bold text-memorial-brown">Vítimas fatais confirmadas:</h4>
+              <ul className="list-disc pl-5 mt-2">
+                <li>Clarindo Maurício Macário (16 anos)</li>
+                <li>Pedro Pereira Inácio (15 anos)</li>
+                <li>José Pereira Monteiro (idade não confirmada)</li>
+                <li>Armando Andrade Vieira (15 meses)</li>
+              </ul>
+            </div>
           </div>
           <Card className="overflow-hidden shadow-lg md:order-1">
             <CardContent className="p-0">
               <img 
-                src="https://source.unsplash.com/photo-1509316975850-ff9c5deb0cd9" 
-                alt="Floresta amazônica" 
+                src="https://images.unsplash.com/photo-1527576539890-dfa815648363" 
+                alt="Representação simbólica das estruturas de poder na região amazônica" 
                 className="w-full h-auto object-cover aspect-video"
               />
+              <div className="p-3 bg-memorial-beige/60">
+                <p className="text-sm text-memorial-dark/80">O local do massacre, Boca do Capacete, era um ponto estratégico para reuniões dos Ticuna e acesso ao Rio Solimões, onde muitos corpos foram jogados para ocultar evidências.</p>
+              </div>
             </CardContent>
           </Card>
         </div>
@@ -73,26 +91,56 @@ const History = () => {
             <h3 className="text-xl md:text-2xl font-bold mb-4 text-memorial-brown">Repercussão e Justiça</h3>
             <p className="mb-4 text-memorial-dark/90">
               O massacre ganhou repercussão nacional e internacional, sendo noticiado inicialmente como 
-              "Massacre na Boca do Capacete". As investigações apontaram Oscar Castelo Branco como mandante 
-              do crime, que inicialmente foi classificado como homicídio.
+              "Massacre na Boca do Capacete" ou "Massacre dos Ticuna". Organizações como Survival International 
+              e Amnesty International denunciaram o caso, pressionando as autoridades brasileiras.
             </p>
             <p className="mb-4 text-memorial-dark/90">
-              Somente em 1994, após pressão do Ministério Público Federal, o caso foi reclassificado como genocídio, 
-              reconhecendo a intenção de eliminar parcialmente o grupo Ticuna por motivos étnicos.
+              As investigações iniciais apontaram Oscar Castelo Branco como mandante, mas ele negou envolvimento. 
+              O caso foi inicialmente classificado como homicídio, dificultando a punição adequada dos responsáveis.
             </p>
+            <div className="bg-memorial-beige p-4 rounded-md my-4">
+              <h4 className="font-bold text-memorial-brown">Cronologia judicial:</h4>
+              <ul className="list-none pl-1 mt-2 space-y-2">
+                <li className="flex gap-3">
+                  <span className="text-memorial-accent font-bold">1994:</span> 
+                  <span>Caso reclassificado como genocídio após pressão do Ministério Público Federal.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-memorial-accent font-bold">2001:</span> 
+                  <span>Treze anos após o massacre, Oscar Castelo Branco e 13 executores são condenados a penas entre 15 e 25 anos.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-memorial-accent font-bold">2004:</span> 
+                  <span>O Tribunal Regional Federal absolve Oscar Castelo Branco e reduz as penas dos demais condenados para 12 anos.</span>
+                </li>
+              </ul>
+            </div>
             <p className="text-memorial-dark/90">
-              Em 2001, treze anos após o massacre, Oscar Castelo Branco e 13 executores foram condenados. 
-              Entretanto, em 2004, o Tribunal Regional Federal absolveu o mandante e reduziu as penas dos demais, 
-              consolidando a percepção de impunidade que frequentemente marca crimes contra povos indígenas no Brasil.
+              O desfecho judicial do caso exemplifica a impunidade que frequentemente marca crimes contra povos indígenas no Brasil. 
+              A absolvição do mandante e a redução das penas dos executores reforçaram a percepção de que o sistema de justiça falha 
+              na proteção dos direitos dos povos originários.
             </p>
+            <div className="mt-4">
+              <a 
+                href="https://cimi.org.br/2018/03/ha-30-anos-o-massacre-dos-tikuna-deixava-cicatrizes-profundas-e-permanentes/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-memorial-accent hover:text-memorial-brown transition-colors"
+              >
+                Documentação do CIMI sobre o massacre <ExternalLink size={16} className="ml-1" />
+              </a>
+            </div>
           </div>
           <Card className="overflow-hidden shadow-lg">
             <CardContent className="p-0">
               <img 
-                src="https://source.unsplash.com/photo-1426604966848-d7adac402bff" 
-                alt="Região do Alto Solimões" 
+                src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b" 
+                alt="Representação simbólica do sistema de justiça" 
                 className="w-full h-auto object-cover aspect-video"
               />
+              <div className="p-3 bg-memorial-beige/60">
+                <p className="text-sm text-memorial-dark/80">A luta por justiça se estendeu por 16 anos nos tribunais brasileiros, terminando com a absolvição do mandante e redução das penas dos executores.</p>
+              </div>
             </CardContent>
           </Card>
         </div>
