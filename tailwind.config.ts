@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				memorial: {
+					'brown': '#73553A',
+					'green': '#3B6D4A',
+					'beige': '#F5F1E8',
+					'dark': '#2A2A2A',
+					'light': '#F9F6F0',
+					'accent': '#C15D2A',
+					'river': '#4A8DB7',
 				}
+			},
+			fontFamily: {
+				'serif': ['Merriweather', 'serif'],
+				'heading': ['Roboto Slab', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +98,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 1.5s ease-out forwards',
 			}
 		}
 	},
