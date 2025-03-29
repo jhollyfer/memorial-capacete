@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Info, ChevronDown, ChevronUp } from 'lucide-react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -10,91 +9,91 @@ const timelineEvents = [
     title: "Intensificação dos Conflitos",
     description: "Aumento dos conflitos entre os Ticuna e madeireiros, grileiros e posseiros na região do Alto Solimões devido à exploração ilegal de recursos naturais e invasão de terras tradicionalmente ocupadas.",
     detail: "A expansão da fronteira agrícola e madeireira no Alto Solimões gerou pressão crescente sobre os territórios Ticuna. Comunidades inteiras foram ameaçadas por grupos armados a serviço de latifundiários e madeireiros.",
-    image: "https://images.unsplash.com/photo-1465379944081-7f47de8d74ac"
+    image: "https://images.unsplash.com/photo-1551651767-d5ffbdd04b83"
   },
   {
     year: "Início dos anos 1980",
     title: "Mobilização dos Ticuna",
     description: "Os Ticuna se organizam em assembleias e publicam o jornal Magüta para reivindicar territórios e direitos. Fundação do Conselho Geral da Tribo Ticuna (CGTT) em 1982.",
     detail: "O CGTT foi a primeira organização indígena formal na região, representando um marco no protagonismo político dos Ticuna. O jornal Magüta tornou-se um importante veículo de comunicação e resistência cultural.",
-    image: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2"
+    image: "https://images.unsplash.com/photo-1543269865-cbf427effbad"
   },
   {
     year: "1987",
     title: "Anúncio da Demarcação",
     description: "A Funai anuncia oficialmente a demarcação das terras Ticuna, provocando forte reação de madeireiros e posseiros que exploravam recursos na área.",
     detail: "O anúncio da demarcação foi visto como uma vitória pelos Ticuna, mas desencadeou uma onda de ameaças e intimidações por parte dos ocupantes não-indígenas, que se recusavam a deixar as terras.",
-    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
+    image: "https://images.unsplash.com/photo-1504199367656-ed345f277353"
   },
   {
     year: "Início de 1988",
     title: "Crescentes Ameaças",
     description: "Oscar Castelo Branco intensifica ameaças contra líderes Ticuna que reivindicavam a demarcação, prometendo \"dar um fim\" na questão.",
     detail: "Funcionários locais da Funai reportaram as ameaças à sede em Brasília, solicitando proteção para as comunidades Ticuna, mas as medidas adotadas foram insuficientes.",
-    image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a"
+    image: "https://images.unsplash.com/photo-1553255998-b66d706a6262"
   },
   {
     year: "28 de março de 1988",
     title: "O Massacre",
     description: "Grupo armado liderado por Oscar Castelo Branco ataca indígenas reunidos na Boca do Capacete, resultando em 4 mortos confirmados, 23 feridos e 10 desaparecidos.",
     detail: "O ataque ocorreu por volta das 9h da manhã, quando aproximadamente 90 Ticuna estavam reunidos em assembleia. Os atacantes chegaram em duas lanchas, usando roupas camufladas e com rostos cobertos. O tiroteio durou cerca de 30 minutos.",
-    image: "https://images.unsplash.com/photo-1469041797191-50ace28483c3"
+    image: "https://images.unsplash.com/photo-1566140967404-b8b3932483f5"
   },
   {
     year: "29-30 de março de 1988",
     title: "Repercussão Imediata",
     description: "O ataque ganha destaque na mídia nacional e internacional, sendo chamado de 'Massacre na Boca do Capacete'. Primeiras investigações são iniciadas.",
     detail: "Equipes de reportagem chegaram ao local no dia seguinte, documentando os corpos e entrevistando sobreviventes. As imagens chocantes foram transmitidas em telejornais de todo o país, gerando forte comoção pública.",
-    image: "https://images.unsplash.com/photo-1439886183900-e79ec0057170"
+    image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1"
   },
   {
     year: "Abril de 1988",
     title: "Negação do Mandante",
     description: "Em entrevista, Oscar Castelo Branco nega envolvimento, afirmando estar em Manaus no dia do ataque e sugerindo ser uma \"armação da Funai\".",
     detail: "A fala de Castelo Branco revelou desprezo pelos indígenas, referindo-se a eles como \"preguiçosos\" e \"manipulados\". Sua tentativa de se distanciar do crime contrastava com diversos depoimentos que o apontavam como mandante.",
-    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027"
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
   },
   {
     year: "1991",
     title: "Fundação do Museu Magüta",
     description: "É criado em Benjamin Constant (AM) o primeiro museu indígena do Brasil como parte da reafirmação cultural e política dos Ticuna após o massacre.",
     detail: "O museu reuniu peças relacionadas à cosmologia, rituais e história Ticuna. Em 1995, recebeu o prêmio de \"Melhor Museu do Ano\" concedido pelo International Council of Museums, sendo reconhecido internacionalmente por seu pioneirismo.",
-    image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d"
+    image: "https://images.unsplash.com/photo-1566152449065-05a2ad4c3585"
   },
   {
     year: "1994",
     title: "Reclassificação do Crime",
     description: "O caso é reclassificado de homicídio para genocídio após pressão do Ministério Público Federal, reconhecendo o contexto étnico da violência.",
     detail: "A reclassificação foi um marco jurídico importante, pois reconheceu que o ataque visava eliminar parcialmente um grupo étnico específico. Foi um dos poucos casos no Brasil enquadrados na lei de genocídio (Lei 2.889/1956).",
-    image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a"
+    image: "https://images.unsplash.com/photo-1575505586569-646b2ca898fc"
   },
   {
     year: "18 de maio de 2001",
     title: "Condenação",
     description: "Treze anos após o massacre, Oscar Castelo Branco e outros 13 acusados são condenados pela juíza Jaíza Maria Pinto Fraxe a penas entre 15 e 25 anos.",
     detail: "A sentença foi considerada histórica por grupos de direitos humanos e organizações indígenas, representando uma rara condenação por crimes contra povos indígenas no Brasil.",
-    image: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2"
+    image: "https://images.unsplash.com/photo-1589391886645-d51941baf7fb"
   },
   {
     year: "4 de novembro de 2004",
     title: "Absolvição e Redução de Penas",
     description: "O Tribunal Regional Federal absolve Oscar Castelo Branco e reduz as penas dos demais condenados de 15-25 anos para 12 anos, levando à soltura de réus.",
     detail: "A decisão da 3ª Turma do TRF-1, em 27 de outubro de 2004, foi vista como um retrocesso pela comunidade Ticuna e organizações de direitos humanos, reforçando o padrão de impunidade em casos de violência contra indígenas.",
-    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
+    image: "https://images.unsplash.com/photo-1560264641-1b5841a9c4b2"
   },
   {
     year: "2018",
     title: "30 Anos do Massacre",
     description: "Comunidades Ticuna realizam evento memorial marcando três décadas do massacre, reafirmando a luta por justiça e memória.",
     detail: "O evento incluiu depoimentos de sobreviventes, exposição fotográfica e debates sobre a situação atual dos Ticuna. Lideranças destacaram que, apesar das terras demarcadas, as ameaças continuam em novas formas.",
-    image: "https://images.unsplash.com/photo-1469041797191-50ace28483c3"
+    image: "https://images.unsplash.com/photo-1523982440192-dff0f1a9941a"
   },
   {
     year: "Até hoje",
     title: "Memória e Resistência",
     description: "O massacre segue como símbolo da luta dos povos indígenas por justiça, território e reconhecimento. A memória é mantida viva através de relatos orais, documentários e publicações.",
     detail: "As novas gerações Ticuna aprendem sobre o massacre como parte crucial de sua história coletiva. Organizações como o CGTT continuam ativas na defesa dos direitos Ticuna e na preservação da memória do massacre.",
-    image: "https://images.unsplash.com/photo-1439886183900-e79ec0057170"
+    image: "https://images.unsplash.com/photo-1541427468627-a89a96e5ca1d"
   }
 ];
 
@@ -238,9 +237,9 @@ const Timeline = () => {
           
           <div className="mt-6 p-4 bg-memorial-accent/10 rounded-md">
             <p className="text-memorial-dark/80 text-sm italic">
-              "As imagens utilizadas nesta linha do tempo são representativas do contexto amazônico e dos povos indígenas. 
-              Embora não sejam fotografias diretamente relacionadas aos eventos do massacre, elas ilustram o ambiente e 
-              a cultura da região onde vivem os Ticuna."
+              "As imagens utilizadas nesta linha do tempo são representativas da cultura e identidade do povo Ticuna.
+              Elas ilustram aspectos da vida, resistência e tradições dos povos indígenas da Amazônia, contextualizando
+              visualmente os eventos históricos descritos na cronologia."
             </p>
           </div>
         </div>
