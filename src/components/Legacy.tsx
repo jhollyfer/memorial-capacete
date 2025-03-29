@@ -47,17 +47,17 @@ const impactItems = [
   {
     title: "Cultura e Arte",
     description: "O massacre inspirou produções artísticas e culturais, como poemas, músicas e pinturas que retratam a resistência e a memória Ticuna.",
-    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027"
+    image: "https://images.unsplash.com/photo-1551651767-d5ffbdd04b83"
   },
   {
     title: "Legislação Indígena",
     description: "O caso contribuiu para o debate sobre a necessidade de legislação específica para a proteção dos direitos e territórios indígenas no Brasil.",
-    image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d"
+    image: "https://images.unsplash.com/photo-1610513320995-1ad4bbf25e55"
   },
   {
     title: "Fortalecimento Identitário",
     description: "Após o massacre, o povo Ticuna intensificou processos de autoafirmação cultural e valorização de suas tradições como forma de resistência.",
-    image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a"
+    image: "https://images.unsplash.com/photo-1562714529-94d65997e3c9"
   }
 ];
 
@@ -65,17 +65,17 @@ const ticunaHistory = [
   {
     title: "Origens Ancestrais",
     description: "O povo Ticuna (também grafado como Tikuna, Tukuna ou Magüta) habita tradicionalmente a região amazônica da tríplice fronteira entre Brasil, Peru e Colômbia há milênios. Segundo sua cosmologia, são descendentes de Yo'i, herói mítico que os pescou com iscas de macaxeira no igarapé sagrado Eware.",
-    image: "https://images.unsplash.com/photo-1465379944081-7f47de8d74ac"
+    image: "https://images.unsplash.com/photo-1610296669228-602fa827fc1f"
   },
   {
     title: "Organização Social",
     description: "A sociedade Ticuna é tradicionalmente organizada em clãs patrilineares divididos em duas metades: com penas (aves) e sem penas (animais terrestres e plantas). Essa organização regula os casamentos, que devem ocorrer entre pessoas de clãs opostos, evitando o que consideram incesto.",
-    image: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2"
+    image: "https://images.unsplash.com/photo-1551651653-c5dcb914d809"
   },
   {
     title: "Contato e Resistência",
     description: "O contato com os colonizadores europeus data do século XVII. Os Ticuna sofreram com a escravidão durante o ciclo da borracha e foram forçados a trabalhar nos seringais. Ao longo dos séculos, desenvolveram estratégias de resistência cultural e territorial que permitiram sua sobrevivência como povo.",
-    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
+    image: "https://images.unsplash.com/photo-1566993756997-d5982294dfa4"
   }
 ];
 

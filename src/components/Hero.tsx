@@ -9,7 +9,7 @@ const Hero = () => {
       id="hero" 
       className="relative min-h-screen flex flex-col items-center justify-center bg-memorial-beige pt-16 overflow-hidden"
       style={{
-        backgroundImage: 'url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")',
+        backgroundImage: 'url("https://images.unsplash.com/photo-1524962886072-c0254811e159")',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}

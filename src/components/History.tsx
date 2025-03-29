@@ -40,8 +40,8 @@ const History = () => {
           <Card className="overflow-hidden shadow-lg">
             <CardContent className="p-0">
               <img 
-                src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac" 
-                alt="Representação da floresta amazônica, território tradicional Ticuna" 
+                src="https://images.unsplash.com/photo-1455540904194-fc101941273a" 
+                alt="Território tradicional dos Ticuna" 
                 className="w-full h-auto object-cover aspect-video"
               />
               <div className="p-3 bg-memorial-beige/60">
@@ -72,12 +72,12 @@ const History = () => {
           <Card className="overflow-hidden shadow-lg">
             <CardContent className="p-0">
               <img 
-                src="https://images.unsplash.com/photo-1493962853295-0fd70327578a" 
-                alt="Representação da região amazônica do Alto Solimões" 
+                src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e" 
+                alt="Pintura corporal e adornos indígenas" 
                 className="w-full h-auto object-cover aspect-video"
               />
               <div className="p-3 bg-memorial-beige/60">
-                <p className="text-sm text-memorial-dark/80">Região do Alto Solimões, onde vivem os Ticuna há séculos, marcada por conflitos territoriais e disputa por recursos naturais.</p>
+                <p className="text-sm text-memorial-dark/80">Elementos da cultura indígena como pinturas corporais e adornos, característicos da identidade visual dos povos da Amazônia.</p>
               </div>
             </CardContent>
           </Card>
@@ -110,8 +110,8 @@ const History = () => {
           <Card className="overflow-hidden shadow-lg md:order-1">
             <CardContent className="p-0">
               <img 
-                src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d" 
-                alt="Representação da região do massacre" 
+                src="https://images.unsplash.com/photo-1519500189805-6d505c1f4fd9" 
+                alt="Rio da região amazônica" 
                 className="w-full h-auto object-cover aspect-video"
               />
               <div className="p-3 bg-memorial-beige/60">
@@ -169,8 +169,8 @@ const History = () => {
           <Card className="overflow-hidden shadow-lg">
             <CardContent className="p-0">
               <img 
-                src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2" 
-                alt="Representação da justiça e luta dos povos indígenas" 
+                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952" 
+                alt="Representação da luta por justiça" 
                 className="w-full h-auto object-cover aspect-video"
               />
               <div className="p-3 bg-memorial-beige/60">
