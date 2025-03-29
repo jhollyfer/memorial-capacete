@@ -47,17 +47,17 @@ const impactItems = [
   {
     title: "Cultura e Arte",
     description: "O massacre inspirou produções artísticas e culturais, como poemas, músicas e pinturas que retratam a resistência e a memória Ticuna.",
-    image: "https://images.unsplash.com/photo-1551651767-d5ffbdd04b83"
+    image: "placeholder-ticuna-art.jpg"
   },
   {
     title: "Legislação Indígena",
     description: "O caso contribuiu para o debate sobre a necessidade de legislação específica para a proteção dos direitos e territórios indígenas no Brasil.",
-    image: "https://images.unsplash.com/photo-1610513320995-1ad4bbf25e55"
+    image: "placeholder-indigenous-legislation.jpg"
   },
   {
     title: "Fortalecimento Identitário",
     description: "Após o massacre, o povo Ticuna intensificou processos de autoafirmação cultural e valorização de suas tradições como forma de resistência.",
-    image: "https://images.unsplash.com/photo-1562714529-94d65997e3c9"
+    image: "placeholder-ticuna-identity.jpg"
   }
 ];
 
@@ -65,17 +65,17 @@ const ticunaHistory = [
   {
     title: "Origens Ancestrais",
     description: "O povo Ticuna (também grafado como Tikuna, Tukuna ou Magüta) habita tradicionalmente a região amazônica da tríplice fronteira entre Brasil, Peru e Colômbia há milênios. Segundo sua cosmologia, são descendentes de Yo'i, herói mítico que os pescou com iscas de macaxeira no igarapé sagrado Eware.",
-    image: "https://images.unsplash.com/photo-1610296669228-602fa827fc1f"
+    image: "placeholder-ticuna-origins.jpg"
   },
   {
     title: "Organização Social",
     description: "A sociedade Ticuna é tradicionalmente organizada em clãs patrilineares divididos em duas metades: com penas (aves) e sem penas (animais terrestres e plantas). Essa organização regula os casamentos, que devem ocorrer entre pessoas de clãs opostos, evitando o que consideram incesto.",
-    image: "https://images.unsplash.com/photo-1551651653-c5dcb914d809"
+    image: "placeholder-ticuna-social.jpg"
   },
   {
     title: "Contato e Resistência",
     description: "O contato com os colonizadores europeus data do século XVII. Os Ticuna sofreram com a escravidão durante o ciclo da borracha e foram forçados a trabalhar nos seringais. Ao longo dos séculos, desenvolveram estratégias de resistência cultural e territorial que permitiram sua sobrevivência como povo.",
-    image: "https://images.unsplash.com/photo-1566993756997-d5982294dfa4"
+    image: "placeholder-ticuna-resistance.jpg"
   }
 ];
 
@@ -97,12 +97,12 @@ const Legacy = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {ticunaHistory.map((item, index) => (
               <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-colors overflow-hidden">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                  />
+                <div className="h-48 overflow-hidden bg-memorial-dark/50 flex items-center justify-center">
+                  <p className="text-white/50 text-sm px-4 py-2 border border-white/20 rounded">
+                    {index === 0 ? "Imagem: Origens e cosmologia Ticuna" : 
+                     index === 1 ? "Imagem: Organização social Ticuna" : 
+                     "Imagem: Resistência histórica Ticuna"}
+                  </p>
                 </div>
                 <CardContent className="p-6">
                   <h4 className="text-xl font-bold mb-3 text-white">{item.title}</h4>
@@ -159,9 +159,14 @@ const Legacy = () => {
             {impactItems.map((item, index) => (
               <div key={index} className="relative h-64 rounded-lg overflow-hidden group">
                 <div 
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                  style={{ backgroundImage: `url(${item.image})` }}
-                ></div>
+                  className="absolute inset-0 bg-memorial-dark flex items-center justify-center"
+                >
+                  <p className="text-white/50 text-sm px-4 py-2 border border-white/20 rounded">
+                    {index === 0 ? "Imagem: Arte e cultura Ticuna pós-massacre" : 
+                     index === 1 ? "Imagem: Documentos de legislação indígena" : 
+                     "Imagem: Cerimônias e rituais Ticuna"}
+                  </p>
+                </div>
                 <div className="absolute inset-0 bg-memorial-dark/70"></div>
                 <div className="absolute inset-0 p-6 flex flex-col justify-end">
                   <h4 className="text-lg font-bold mb-2 text-white">{item.title}</h4>

@@ -9,14 +9,14 @@ const timelineEvents = [
     title: "Intensificação dos Conflitos",
     description: "Aumento dos conflitos entre os Ticuna e madeireiros, grileiros e posseiros na região do Alto Solimões devido à exploração ilegal de recursos naturais e invasão de terras tradicionalmente ocupadas.",
     detail: "A expansão da fronteira agrícola e madeireira no Alto Solimões gerou pressão crescente sobre os territórios Ticuna. Comunidades inteiras foram ameaçadas por grupos armados a serviço de latifundiários e madeireiros.",
-    image: "https://images.unsplash.com/photo-1551651767-d5ffbdd04b83"
+    image: "placeholder-conflicts-70s.jpg"
   },
   {
     year: "Início dos anos 1980",
     title: "Mobilização dos Ticuna",
     description: "Os Ticuna se organizam em assembleias e publicam o jornal Magüta para reivindicar territórios e direitos. Fundação do Conselho Geral da Tribo Ticuna (CGTT) em 1982.",
     detail: "O CGTT foi a primeira organização indígena formal na região, representando um marco no protagonismo político dos Ticuna. O jornal Magüta tornou-se um importante veículo de comunicação e resistência cultural.",
-    image: "https://images.unsplash.com/photo-1543269865-cbf427effbad"
+    image: "placeholder-ticuna-organization.jpg"
   },
   {
     year: "1987",
@@ -50,7 +50,7 @@ const timelineEvents = [
     year: "Abril de 1988",
     title: "Negação do Mandante",
     description: "Em entrevista, Oscar Castelo Branco nega envolvimento, afirmando estar em Manaus no dia do ataque e sugerindo ser uma \"armação da Funai\".",
-    detail: "A fala de Castelo Branco revelou desprezo pelos indígenas, referindo-se a eles como \"preguiçosos\" e \"manipulados\". Sua tentativa de se distanciar do crime contrastava com diversos depoimentos que o apontavam como mandante.",
+    detail: "A fala de Castelo Branco revelou desprezo pelos ind��genas, referindo-se a eles como \"preguiçosos\" e \"manipulados\". Sua tentativa de se distanciar do crime contrastava com diversos depoimentos que o apontavam como mandante.",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
   },
   {
@@ -181,12 +181,10 @@ const Timeline = () => {
                       
                       <CollapsibleContent>
                         <div className="p-5 pt-0 border-t border-memorial-accent/10 mt-3">
-                          <div className="aspect-video overflow-hidden rounded-md mb-4">
-                            <img 
-                              src={event.image} 
-                              alt={event.title} 
-                              className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-                            />
+                          <div className="aspect-video overflow-hidden rounded-md mb-4 bg-memorial-beige/60 flex items-center justify-center">
+                            <p className="text-memorial-dark/50 text-sm px-3 py-1 text-center">
+                              Imagem: {getPlaceholderDescription(index)}
+                            </p>
                           </div>
                           <p className="text-memorial-dark/80">{event.detail}</p>
                         </div>
@@ -197,12 +195,10 @@ const Timeline = () => {
                   {/* Visual representation for mobile */}
                   <div className="md:hidden mt-4 mb-8">
                     {isExpanded && (
-                      <div className="aspect-video overflow-hidden rounded-md">
-                        <img 
-                          src={event.image} 
-                          alt={event.title} 
-                          className="w-full h-full object-cover"
-                        />
+                      <div className="aspect-video overflow-hidden rounded-md bg-memorial-beige/60 flex items-center justify-center">
+                        <p className="text-memorial-dark/50 text-sm px-3 py-1 text-center">
+                          Imagem: {getPlaceholderDescription(index)}
+                        </p>
                       </div>
                     )}
                   </div>
@@ -237,9 +233,9 @@ const Timeline = () => {
           
           <div className="mt-6 p-4 bg-memorial-accent/10 rounded-md">
             <p className="text-memorial-dark/80 text-sm italic">
-              "As imagens utilizadas nesta linha do tempo são representativas da cultura e identidade do povo Ticuna.
-              Elas ilustram aspectos da vida, resistência e tradições dos povos indígenas da Amazônia, contextualizando
-              visualmente os eventos históricos descritos na cronologia."
+              "As imagens utilizadas nesta linha do tempo representarão aspectos históricos e culturais do povo Ticuna
+              e dos eventos relacionados ao Massacre do Capacete. As ilustrações serão atualizadas com fotografias
+              autênticas que documentam a história, cultura e resistência do povo Ticuna."
             </p>
           </div>
         </div>
@@ -247,5 +243,25 @@ const Timeline = () => {
     </section>
   );
 };
+
+function getPlaceholderDescription(index: number): string {
+  const descriptions = [
+    "Conflitos territoriais anos 70-80",
+    "Organização política Ticuna anos 80",
+    "Anúncio de demarcação de terras",
+    "Ameaças contra líderes Ticuna",
+    "O dia do massacre em Boca do Capacete",
+    "Repercussão do massacre na mídia",
+    "Oscar Castelo Branco, acusado como mandante",
+    "Museu Magüta, símbolo da resistência",
+    "Reclassificação do crime para genocídio",
+    "Condenação dos responsáveis",
+    "Absolvição do mandante em 2004",
+    "Evento memorial de 30 anos do massacre",
+    "Cerimônias de memória e resistência"
+  ];
+  
+  return descriptions[index] || `Evento histórico relacionado ao massacre`;
+}
 
 export default Timeline;

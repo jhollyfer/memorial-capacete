@@ -39,11 +39,14 @@ const History = () => {
           </div>
           <Card className="overflow-hidden shadow-lg">
             <CardContent className="p-0">
-              <img 
-                src="https://images.unsplash.com/photo-1455540904194-fc101941273a" 
-                alt="Território tradicional dos Ticuna" 
-                className="w-full h-auto object-cover aspect-video"
-              />
+              <div 
+                className="w-full aspect-video bg-memorial-beige/60 flex items-center justify-center"
+                style={{ backgroundColor: '#F1F0FB' }}
+              >
+                <p className="text-memorial-dark/50 text-sm px-4 py-2 border border-memorial-dark/20 rounded">
+                  Imagem: Território tradicional Ticuna com floresta amazônica e rios
+                </p>
+              </div>
               <div className="p-3 bg-memorial-beige/60">
                 <p className="text-sm text-memorial-dark/80">Território tradicional dos Ticuna na região do Alto Solimões, fronteira entre Brasil, Colômbia e Peru, caracterizado pela densa floresta amazônica.</p>
               </div>
@@ -71,13 +74,16 @@ const History = () => {
           </div>
           <Card className="overflow-hidden shadow-lg">
             <CardContent className="p-0">
-              <img 
-                src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e" 
-                alt="Pintura corporal e adornos indígenas" 
-                className="w-full h-auto object-cover aspect-video"
-              />
+              <div 
+                className="w-full aspect-video bg-memorial-beige/60 flex items-center justify-center"
+                style={{ backgroundColor: '#F1F0FB' }}
+              >
+                <p className="text-memorial-dark/50 text-sm px-4 py-2 border border-memorial-dark/20 rounded">
+                  Imagem: Pinturas corporais e adornos tradicionais Ticuna
+                </p>
+              </div>
               <div className="p-3 bg-memorial-beige/60">
-                <p className="text-sm text-memorial-dark/80">Elementos da cultura indígena como pinturas corporais e adornos, característicos da identidade visual dos povos da Amazônia.</p>
+                <p className="text-sm text-memorial-dark/80">Elementos da cultura Ticuna como pinturas corporais e adornos, característicos da identidade visual dos povos da Amazônia.</p>
               </div>
             </CardContent>
           </Card>
@@ -109,11 +115,14 @@ const History = () => {
           </div>
           <Card className="overflow-hidden shadow-lg md:order-1">
             <CardContent className="p-0">
-              <img 
-                src="https://images.unsplash.com/photo-1519500189805-6d505c1f4fd9" 
-                alt="Rio da região amazônica" 
-                className="w-full h-auto object-cover aspect-video"
-              />
+              <div 
+                className="w-full aspect-video bg-memorial-beige/60 flex items-center justify-center"
+                style={{ backgroundColor: '#F1F0FB' }}
+              >
+                <p className="text-memorial-dark/50 text-sm px-4 py-2 border border-memorial-dark/20 rounded">
+                  Imagem: Rio Solimões e localidade Boca do Capacete
+                </p>
+              </div>
               <div className="p-3 bg-memorial-beige/60">
                 <p className="text-sm text-memorial-dark/80">O local do massacre, Boca do Capacete, era um ponto estratégico para reuniões dos Ticuna e acesso ao Rio Solimões, onde muitos corpos foram jogados para ocultar evidências.</p>
               </div>
@@ -168,11 +177,14 @@ const History = () => {
           </div>
           <Card className="overflow-hidden shadow-lg">
             <CardContent className="p-0">
-              <img 
-                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952" 
-                alt="Representação da luta por justiça" 
-                className="w-full h-auto object-cover aspect-video"
-              />
+              <div 
+                className="w-full aspect-video bg-memorial-beige/60 flex items-center justify-center"
+                style={{ backgroundColor: '#F1F0FB' }}
+              >
+                <p className="text-memorial-dark/50 text-sm px-4 py-2 border border-memorial-dark/20 rounded">
+                  Imagem: Documentação do julgamento e busca por justiça
+                </p>
+              </div>
               <div className="p-3 bg-memorial-beige/60">
                 <p className="text-sm text-memorial-dark/80">A luta por justiça se estendeu por 16 anos nos tribunais brasileiros, terminando com a absolvição do mandante e redução das penas dos executores.</p>
               </div>

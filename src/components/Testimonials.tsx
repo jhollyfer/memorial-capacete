@@ -9,25 +9,25 @@ const testimonials = [
     quote: "O massacre fortaleceu nossa resistência. Continuamos a lutar não apenas pela demarcação de terras, mas pela afirmação de nossa identidade e cultura. O Museu Magüta é um símbolo dessa resistência, um lugar onde preservamos nossa memória e mostramos ao mundo que continuamos vivos.",
     author: "Constantino Ramos Füpeatücü",
     role: "Museólogo Ticuna, sobrevivente do massacre",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22"
+    image: "placeholder-ticuna-elder.jpg"
   },
   {
     quote: "Eu tinha apenas 12 anos quando ouvi os tiros. Meu pai me puxou para correr em direção ao mato. Muitos não conseguiram escapar. Vimos pessoas caindo enquanto corriam. Aquele dia mudou nossas vidas para sempre, mas reafirmou nossa determinação em defender nosso povo e nossa terra.",
     author: "Pedro Inácio Pinheiro",
     role: "Líder Ticuna, testemunha do massacre",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05"
+    image: "placeholder-ticuna-leader.jpg"
   },
   {
     quote: "O Massacre do Capacete é um símbolo da violência sistemática contra os povos indígenas e da impunidade que ainda persiste no Brasil. O caso revela o padrão histórico de desrespeito aos direitos territoriais indígenas e as falhas do sistema de justiça em proteger essas populações.",
     author: "Dra. Maria Helena Rodrigues",
     role: "Antropóloga, pesquisadora da questão indígena no Brasil",
-    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+    image: "placeholder-anthropologist.jpg"
   },
   {
     quote: "Na época do julgamento, ficou evidente como o preconceito estrutural contra os povos indígenas influenciou o processo. Apesar das provas contundentes, a absolvição do mandante e a redução das penas demonstram que a justiça no Brasil tem um viés que favorece os poderosos em detrimento dos povos originários.",
     author: "Dr. Paulo Santilli",
     role: "Procurador Federal, atuou no caso do Massacre do Capacete",
-    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+    image: "placeholder-federal-attorney.jpg"
   }
 ];
 
@@ -63,9 +63,12 @@ const Testimonials = () => {
           {testimonials.slice(0, 2).map((testimonial, index) => (
             <Card key={index} className="bg-memorial-beige border-none shadow-md overflow-hidden flex flex-col md:flex-row">
               <div 
-                className="w-full md:w-1/3 h-40 md:h-auto bg-cover bg-center"
-                style={{ backgroundImage: `url(${testimonial.image})` }}
-              ></div>
+                className="w-full md:w-1/3 h-40 md:h-auto bg-memorial-brown/20 flex items-center justify-center"
+              >
+                <p className="text-memorial-dark/50 text-sm px-3 py-1 text-center">
+                  {index === 0 ? "Imagem: Ancião Ticuna" : "Imagem: Líder Ticuna"}
+                </p>
+              </div>
               <CardContent className="p-6 relative flex-1">
                 <QuoteIcon className="text-memorial-accent/30 absolute top-4 right-4" size={32} />
                 <p className="mb-6 text-memorial-dark/90 italic">"{testimonial.quote}"</p>
@@ -82,9 +85,12 @@ const Testimonials = () => {
           {testimonials.slice(2, 4).map((testimonial, index) => (
             <Card key={index} className="bg-memorial-beige border-none shadow-md overflow-hidden flex flex-col md:flex-row">
               <div 
-                className="w-full md:w-1/3 h-40 md:h-auto bg-cover bg-center"
-                style={{ backgroundImage: `url(${testimonial.image})` }}
-              ></div>
+                className="w-full md:w-1/3 h-40 md:h-auto bg-memorial-brown/20 flex items-center justify-center"
+              >
+                <p className="text-memorial-dark/50 text-sm px-3 py-1 text-center">
+                  {index === 0 ? "Imagem: Antropóloga" : "Imagem: Procurador Federal"}
+                </p>
+              </div>
               <CardContent className="p-6 relative flex-1">
                 <QuoteIcon className="text-memorial-accent/30 absolute top-4 right-4" size={32} />
                 <p className="mb-6 text-memorial-dark/90 italic">"{testimonial.quote}"</p>

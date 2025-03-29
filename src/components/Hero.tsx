@@ -8,12 +8,17 @@ const Hero = () => {
     <section 
       id="hero" 
       className="relative min-h-screen flex flex-col items-center justify-center bg-memorial-beige pt-16 overflow-hidden"
-      style={{
-        backgroundImage: 'url("https://images.unsplash.com/photo-1524962886072-c0254811e159")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}
     >
+      {/* Placeholder para imagem de fundo */}
+      <div 
+        className="absolute inset-0 bg-memorial-dark flex items-center justify-center"
+        style={{ backgroundColor: '#403E43' }}
+      >
+        <p className="text-white/50 text-sm px-4 py-2 border border-white/20 rounded">
+          Imagem de fundo: Território Ticuna no Alto Solimões
+        </p>
+      </div>
+
       {/* Overlay */}
       <div className="absolute inset-0 bg-memorial-dark/80"></div>
 
