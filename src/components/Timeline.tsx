@@ -25,7 +25,7 @@ const timelineEvents = [
   {
     year: "Início de 1988",
     title: "Crescentes Ameaças",
-    description: "Oscar Castelo Branco intensifica ameaças contra líderes Ticuna que reivindicavam a demarcação, prometendo "dar um fim" na questão.",
+    description: "Oscar Castelo Branco intensifica ameaças contra líderes Ticuna que reivindicavam a demarcação, prometendo \"dar um fim\" na questão.",
     detail: "Funcionários locais da Funai reportaram as ameaças à sede em Brasília, solicitando proteção para as comunidades Ticuna, mas as medidas adotadas foram insuficientes."
   },
   {
@@ -43,14 +43,14 @@ const timelineEvents = [
   {
     year: "Abril de 1988",
     title: "Negação do Mandante",
-    description: "Em entrevista, Oscar Castelo Branco nega envolvimento, afirmando estar em Manaus no dia do ataque e sugerindo ser uma "armação da Funai".",
-    detail: "A fala de Castelo Branco revelou desprezo pelos indígenas, referindo-se a eles como "preguiçosos" e "manipulados". Sua tentativa de se distanciar do crime contrastava com diversos depoimentos que o apontavam como mandante."
+    description: "Em entrevista, Oscar Castelo Branco nega envolvimento, afirmando estar em Manaus no dia do ataque e sugerindo ser uma \"armação da Funai\".",
+    detail: "A fala de Castelo Branco revelou desprezo pelos indígenas, referindo-se a eles como \"preguiçosos\" e \"manipulados\". Sua tentativa de se distanciar do crime contrastava com diversos depoimentos que o apontavam como mandante."
   },
   {
     year: "1991",
     title: "Fundação do Museu Magüta",
     description: "É criado em Benjamin Constant (AM) o primeiro museu indígena do Brasil como parte da reafirmação cultural e política dos Ticuna após o massacre.",
-    detail: "O museu reuniu peças relacionadas à cosmologia, rituais e história Ticuna. Em 1995, recebeu o prêmio de "Melhor Museu do Ano" concedido pelo International Council of Museums, sendo reconhecido internacionalmente por seu pioneirismo."
+    detail: "O museu reuniu peças relacionadas à cosmologia, rituais e história Ticuna. Em 1995, recebeu o prêmio de \"Melhor Museu do Ano\" concedido pelo International Council of Museums, sendo reconhecido internacionalmente por seu pioneirismo."
   },
   {
     year: "1994",
